@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>This paragraph is green due to lower specificity.</p>
+    </div>
+    <div class="highlight"> 
+        <p>This paragraph is purple because .highlight has specificity than div.</p>
+    </div>
+    <div id="unique">
+        <p>This paragraph is red because #unique has the highest specificity.</p>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>this heading is purple because it overrides inheritance.</h1>
+        <p>this paragraph inherits green color from the div parent.</p>
+    </div>
+
+</body>
+</html>
