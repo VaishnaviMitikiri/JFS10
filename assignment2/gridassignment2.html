@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gridExample.css">
+    <style>
+    .container{
+   
+        display: grid;
+        grid-template-columns: 100px 150px;
+        grid-template-rows: 100px 150px;
+        gap: 2px;
+    }
+    .sub{
+        background-color: pink;
+    }
+    .c1{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 5px;
+    }
+    .sub2{
+        background-color: yellow;
+    }
+    .c2{
+        
+        display: grid;
+        grid-template-columns: 1fr 2fr 3fr;
+        grid-template-rows: auto ;
+        gap: 5px;
+    }
+    .sub3 {
+        background-color:cadetblue;
+    }
+    .c3{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 10px;
+        text-align: center;
+    }
+    .sub4{
+        background-color:blue;
+    }
+    .c4{
+        display: grid;
+        grid-template-columns: repeat(auto-fit ,minmax(100px,1fr));
+        gap: 10px;
+    }
+    .sub5{
+        background-color: lightblue;
+        text-align: center;
+    }
+    .c5{
+        display: grid;
+        grid-template-columns: minmax(100px,50px);
+        gap: 10px;
+    }
+    .sub6{
+        background-color: greenyellow;
+        text-align: center;
+    }
+    .c6{
+        display: grid;
+        grid-template-columns: 100px 125px 150px 200px;
+        grid-template-rows: 100px 125px 150px 200px;
+        width: fit-content;
+        gap: 5px;
+    }
+    .sub7{
+        background-color: lightseagreen;
+        text-align: center;
+    }
+    .c7{
+        width: 200px;
+        height: 500px;
+        border: 2px solid black;
+        display: grid;
+        place-items: center;
+    }
+    .sub8{
+        width: 10%;
+        height: 10%;
+        padding: 10px;
+        background-color: royalblue;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <!-- grid column & grid row -->
+    <div class="container">
+        <div class="sub">Hi</div>
+        <div class="sub">Hi</div>
+        <div class="sub">Hi</div>
+        <div class="sub">Hi</div>
+    </div><hr>
+    <!-- grid repeat -->
+    <div class="c1">
+        <div class="sub2">My</div>
+        <div class="sub2">My</div>
+        <div class="sub2">My</div>
+        <div class="sub2">My</div>
+        <div class="sub2">My</div>
+        <div class="sub2">My</div>
+    </div><hr>
+    <!-- grid fraction -->
+    <div class="c2">
+        <div class="sub3">Name</div>
+        <div class="sub3">Name</div>
+        <div class="sub3">Name</div>
+    </div><hr>
+    <!-- grid auto -->
+     <div class="c3">
+        <div class="sub4">Is</div>
+        <div class="sub4">Is</div>
+        <div class="sub4">Is</div>
+        <div class="sub4">Is</div>
+     </div><hr>
+     <!-- repeat dynamic -->
+      <div class="c4">
+        <div class="sub5">M</div>
+        <div class="sub5">M</div>
+        <div class="sub5">M</div>
+        <div class="sub5">M</div>
+        <div class="sub5">M</div>
+        <div class="sub5">M</div>
+      </div><hr>
+      <!-- min & max -->
+       <div class="c5">
+        <div class="sub6">Vaishnavi</div>
+        <div class="sub6">Vaishnavi</div>
+        <div class="sub6">Vaishnavi</div>
+        <div class="sub6">Vaishnavi</div>
+       </div><hr>
+       <!-- fit-content -->
+        <div class="c6">
+            <div class="sub7">item1</div>
+            <div class="sub7">item2</div>
+            <div class="sub7">item3</div>
+            <div class="sub7">item4</div>
+        </div><hr>
+        <!-- percentage -->
+         <div class="c7">
+            <div class="sub8">1</div>
+            <div class="sub8">2</div>
+            <div class="sub8">3</div>
+            <div class="sub8">4</div>
+            <div class="sub8">5</div>
+            <div class="sub8">6</div>
+         </div>
+</body>
+</html>

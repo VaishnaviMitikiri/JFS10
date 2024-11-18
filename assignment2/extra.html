@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .styled-button {
+            color:darkgray;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+        }
+        .styled-button:hover {
+            color:aqua;
+        }
+        .styled-button:focus {
+            color:bisque;
+        }
+        .styled-button:active {
+            color:blueviolet;
+        }
+        /* nth-child() */
+        tr {
+            font-size: 15px;
+            color:darkgray;
+        }
+        tr:first-child {
+            background-color: brown;
+        }
+        tr:nth-child(even) {
+            background-color: aqua;
+        }
+        tr:nth-child(odd) {
+            background-color: blue;
+        }
+        /*pseudo-code elements */
+        p {
+            font-size: 20px;
+            color: black;
+        }
+        p::first-letter {
+            font-size: 20px;
+            color:aqua;
+            font-weight: bold;
+        }
+        p::after {
+            content:" *";
+            color:darkgoldenrod;
+        }
+        p::first-line {
+            font-size: 25px;
+            color:indianred;
+        }
+        ::selection {
+            background-color: chartreuse;
+            color: black;
+        }
+    </style>
+    
+</head>
+<body>
+    <button class="styled-button">Submit</button><br><br>
+    <table>
+        <tr><td>row1</td></tr>
+        <tr><td>row2</td></tr>
+        <tr><td>row3</td></tr>
+        <tr><td>row4</td></tr>
+        <tr><td>row5</td></tr>
+        <tr><td>row6</td></tr>
+        <tr><td>row7</td></tr>
+    </table><br><br>
+    <p>My name is Ankitha.I am from Karimnagar </p>
+</body>
+</html>
+</body>
+</html>

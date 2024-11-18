@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element Example</title>
+    <style>
+        h1 {
+            font-size: 100px;
+            color: black;
+        }
+        /*Insert before an element*/
+        h1::before{
+            content: "*";
+            color: gold;
+        }
+        /*Insert after an element*/
+        h1::after{
+            content: "*";
+            color: gold;
+        }
+        h1::first-letter {
+            color: yellowgreen
+        }
+        h1::first-line{
+            color: blueviolet;
+        }
+        h1::selection {
+            color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo elements</h1>
+</body>
+</html>
