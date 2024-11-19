@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box {
+        height: 200px;
+        width: 200px;
+        margin: 2px;
+        font-size: 50px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .border {
+        border:10px solid brown;
+        font-size: 20px;
+    }
+    .box1 {
+        border:15px dashed blue;
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+   .shadow {
+    height: 100px;
+    width: 100px;
+    padding: 30px;
+    margin: 20px;
+    background-color: aqua;
+   }
+   .shadow1 {
+    box-shadow: 20px 20px 20px rgb(105, 141, 209);
+    font-size: 20px;
+   }
+   .shadow2 {
+    box-shadow: 10px 10px 10px palevioletred;
+    font-size: 20px;
+   }
+   .gradient {
+    height: 100px;
+    width: 100px;
+    padding: 50px;
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   }
+   .linear-gradient {
+    background: linear-gradient(to bottom, red, rgb(209, 203, 204), rgb(16, 13, 181) );
+   }
+   .radial-gradient {
+    background: radial-gradient(ellipse, rgb(105, 141, 209), rgb(214, 36, 187), rgb(51, 91, 94) );
+   }
+   .conic-gradient {
+    background: conic-gradient(pink, yellow, rgb(38, 192, 219), blue);
+   }
+   .transition {
+    height: 100px;
+    width: 100px;
+    padding: 30px;
+    margin: 20px;
+    font-size: 20px;
+    background-color: rgb(6, 195, 35);
+    transition: background 2s ease 1s;
+   }
+   .transition:hover {
+    background: rgb(206, 97, 164);
+   }
+   .transition1 {
+    height: 50px;
+    width: 50px;
+    padding: 30px;
+    margin: 20px;
+    font-size: 20px;
+    background-color: rgb(217, 162, 213);
+    transition: width 2s ease 1s;
+   }
+   .transition1:hover {
+    width: 300px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+    </style>
+</head>
+<body>
+    <div class="box border">box</div>
+    <br>
+    <div class="box box1">box1</div>
+    <div class="shadow shadow1">shadow</div>
+    <div class="shadow shadow2">shadow1</div>
+    <div class="gradient linear-gradient">linear</div><br>
+    <div class="gradient radial-gradient">radial</div><br>
+    <div class="gradient conic-gradient">conic</div><br>
+    <div class="transition">transition</div>
+    <div class="transition1">transition1</div>
+</body>
+</html>
